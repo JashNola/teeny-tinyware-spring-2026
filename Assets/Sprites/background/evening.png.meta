@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Sprites/background/evening.png.meta
 guid: 5f8f7f0524854b749adbca096b5f486a
 TextureImporter:
   internalIDToNameTable:
   - first:
       213: -3332572935105992748
     second: evening_0
-========
-guid: b24ef03df02ac7f469bc6fc7488902da
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -685990394176067462
-    second: telephone-line_0
->>>>>>>> origin/josh-branch:Assets/Sprites/background/telephone-line.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,17 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/Sprites/background/evening.png.meta
       name: evening_0
-========
-      name: telephone-line_0
->>>>>>>> origin/josh-branch:Assets/Sprites/background/telephone-line.png.meta
       rect:
         serializedVersion: 2
         x: 0
-        y: 446
+        y: 0
         width: 1920
-        height: 132
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,13 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/Sprites/background/evening.png.meta
       spriteID: 4d72dee729250c1d0800000000000000
       internalID: -3332572935105992748
-========
-      spriteID: a782ecbfe5fda76f0800000000000000
-      internalID: -685990394176067462
->>>>>>>> origin/josh-branch:Assets/Sprites/background/telephone-line.png.meta
       vertices: []
       indices: 
       edges: []
@@ -166,11 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/Sprites/background/evening.png.meta
       evening_0: -3332572935105992748
-========
-      telephone-line_0: -685990394176067462
->>>>>>>> origin/josh-branch:Assets/Sprites/background/telephone-line.png.meta
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

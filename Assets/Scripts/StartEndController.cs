@@ -62,14 +62,12 @@ public class StartEndController : MonoBehaviour
         // fade in win/lose text
         // fade in "Try Again"
 
-        /*
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 2; i++)
         {
             yield return new WaitForSeconds(endTextDelay);
 
             endScreen.transform.GetChild(i).gameObject.SetActive(true);
         }
-        */
 
         gameActive = false;
 

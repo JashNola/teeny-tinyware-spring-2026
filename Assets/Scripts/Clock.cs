@@ -9,15 +9,16 @@ public class Clock : MonoBehaviour
     public GameObject noonBG;
     public GameObject eveningBG;
 
+    public float maxTime = 90f;
     private float timeRemaining;
-    private float degreesPerSecond = 6f; // 360 degrees over 60 seconds
+    private float degreesPerSecond = 4f; // 360 degrees over 60 seconds
     private string timeOfDay;
     private Color transparent = new Color(1, 1, 1, 0);
 
     private void OnEnable()
     {
         // Reset times
-        timeRemaining = 60;
+        timeRemaining = maxTime;
         timeOfDay = "morning";
 
         // Reset backgrounds
@@ -44,16 +45,16 @@ public class Clock : MonoBehaviour
         }
 
         // Rotate clock hand
-        clockHand.Rotate(0, 0, -degreesPerSecond * Time.deltaTime);
+        clockHand.Rotate(0, 0, -360f / maxTime * Time.deltaTime);
 
         // Change background based on time of day
-        if (timeRemaining < 60 && timeOfDay == "morning")
+        if (timeRemaining < maxTime && timeOfDay == "morning")
         {
             Debug.Log("It is now approaching noon.");
             noonBG.GetComponent<Animation>().Play();
             timeOfDay = "noon";
         }
-        if (timeRemaining < 30 && timeOfDay == "noon")
+        if (timeRemaining < maxTime/2 && timeOfDay == "noon")
         {
             Debug.Log("It is now approaching evening.");
             eveningBG.GetComponent<Animation>().Play();
