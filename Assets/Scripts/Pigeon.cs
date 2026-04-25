@@ -16,15 +16,16 @@ public class Pigeon : MonoBehaviour
     public float upperStarveRange;
     public bool isFed = false;
 
+    private bool hasTriggeredExit = false; // New flag to prevent repeat firing
+
     private void Update()
     {
-        // Checks whether a pigeon has been fed
-        if (isFed)
+        if (isFed && !hasTriggeredExit)
         {
+            hasTriggeredExit = true; 
+            this.gameObject.tag = "PigeonLeaving";
             onPigeonFed?.Invoke(pigeonListIndex);
-            this.gameObject.tag = "PigeonLeaving"; 
         }
-
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -50,8 +51,13 @@ public class Pigeon : MonoBehaviour
     IEnumerator LeaveTimer()
     {
         yield return new WaitForSeconds(UnityEngine.Random.Range(lowerStarveRange, upperStarveRange));
-        this.gameObject.tag = "PigeonLeaving";
-        onPigeonStarved?.Invoke(pigeonListIndex);
+
+        if (!hasTriggeredExit)
+        {
+            hasTriggeredExit = true;
+            this.gameObject.tag = "PigeonLeaving";
+            onPigeonStarved?.Invoke(pigeonListIndex);
+        }
     }
 
 
