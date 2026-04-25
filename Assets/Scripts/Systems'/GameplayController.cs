@@ -7,6 +7,7 @@ public class DifficultyLevels
     // These must be public to be accessed by the loop
     public int criteria;
     public int difficultyMaxPigeonCounts;
+    public float difficultyPigeonSpawnIntervals; 
 }
 
 [Serializable]
@@ -59,6 +60,8 @@ public class GameplayController : MonoBehaviour
             {
                 // Update the global max count
                 maxPigeonCount = difficultySettings.levels[i].difficultyMaxPigeonCounts;
+                PigeonManager.instance.spawnCheckInterval = difficultySettings.levels[i].difficultyPigeonSpawnIntervals;
+
             }
         }
     }
