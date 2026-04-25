@@ -8,6 +8,15 @@ public class Pigeon : MonoBehaviour
 {
     public GameObject occupiedWirePoint;
 
+    public enum PigeonStates // Becomes altered in the pigeonmanager script
+    { 
+        Flying,
+        Waiting,
+        Eating
+    }
+
+    public PigeonStates pigeonState; 
+
     public static event Action<int> onPigeonFed;
     public static event Action<int> onPigeonStarved;
     
@@ -16,35 +25,35 @@ public class Pigeon : MonoBehaviour
     public float upperStarveRange;
     public bool isFed = false;
 
-    private bool hasTriggeredExit = false; // New flag to prevent repeat firing
+    private bool hasTriggeredExit = false;
+
+
+    private void Start()
+    {
+        pigeonState = PigeonStates.Flying;
+    }
 
     private void Update()
     {
         if (isFed && !hasTriggeredExit)
         {
-            hasTriggeredExit = true; 
-            this.gameObject.tag = "PigeonLeaving";
-            onPigeonFed?.Invoke(pigeonListIndex);
+            StartCoroutine(PigeonEatingLeaveDelay()); 
         }
     }
+
+
 
     void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("PigeonRestingPoint"))
         {
+            pigeonState = PigeonStates.Waiting;
             StartCoroutine(LeaveTimer());
         }
 
         else if (other.CompareTag("PigeonSpawnPoint") && this.gameObject.tag == "PigeonLeaving")
         {
-            Debug.Log("Pigeon will be destroyed now");
             Destroy(this.gameObject); 
-        }
-
-        else
-        {
-            Debug.Log(other.tag);
-            Debug.Log(this.tag);
         }
     }
 
@@ -57,9 +66,18 @@ public class Pigeon : MonoBehaviour
             hasTriggeredExit = true;
             this.gameObject.tag = "PigeonLeaving";
             onPigeonStarved?.Invoke(pigeonListIndex);
+            pigeonState = PigeonStates.Flying; 
         }
     }
 
+    IEnumerator PigeonEatingLeaveDelay()
+    {
+        yield return new WaitForSeconds(.5f);
+        hasTriggeredExit = true;
+        this.gameObject.tag = "PigeonLeaving";
+        onPigeonFed?.Invoke(pigeonListIndex);
+        pigeonState = PigeonStates.Flying; 
 
+    }
 
 }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6967722104242673273}
   - component: {fileID: 5242038376554804341}
   - component: {fileID: 1742717062266901623}
+  - component: {fileID: 2770031653132543178}
   m_Layer: 0
   m_Name: Pigeon
   m_TagString: PigeonEntering
@@ -170,10 +171,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1cec100d2ce8c84ea9301cc54a55cc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Pigeon
+  occupiedWirePoint: {fileID: 0}
+  pigeonState: 0
   pigeonListIndex: 0
-  isFed: 0
   lowerStarveRange: 1
   upperStarveRange: 6
+  isFed: 0
 --- !u!50 &1742717062266901623
 Rigidbody2D:
   serializedVersion: 5
@@ -201,6 +204,28 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &2770031653132543178
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3084741771127225406}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: dfe2dd6d698228d41a19aaa0b5f9a109, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &3679458211962118693
 GameObject:
   m_ObjectHideFlags: 0
@@ -212,6 +237,7 @@ GameObject:
   - component: {fileID: 4303112124918941436}
   - component: {fileID: 8189449557213476000}
   - component: {fileID: 6424063601764923290}
+  - component: {fileID: 3648904861172348644}
   m_Layer: 0
   m_Name: Sprite
   m_TagString: Untagged
@@ -284,7 +310,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.38679248, g: 0.38679248, b: 0.38679248, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -306,3 +332,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PigeonAnimations
   aiPath: {fileID: 8842691502268596963}
+  pigeonGameObject: {fileID: 3084741771127225406}
+--- !u!95 &3648904861172348644
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3679458211962118693}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0ebe4a8121779474c8cc87ba540e57e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Splines;
+using static Pigeon;
 
 public class FeedingManager : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class FeedingManager : MonoBehaviour
     public float throwCooldown;
     private float cooldownRemaining;
     private bool canThrow;
+
+    // FeedPigeon variables
+    int lastInput;
+    public GameObject pigeonRestingPoints;
 
     private void Start()
     {
@@ -34,9 +39,10 @@ public class FeedingManager : MonoBehaviour
         {
             for (int i = 0; i < 10; i++)
             {
+                
                 if (Input.GetKeyDown((KeyCode)(48 + i)))
                 {
-                    Debug.Log("Detected key input " + 1);
+                    lastInput = i; 
                     canThrow = false;
                     if (i == 0) StartCoroutine("ThrowFood", 9);
                     else StartCoroutine("ThrowFood", i - 1);
@@ -79,12 +85,52 @@ public class FeedingManager : MonoBehaviour
         Debug.Log("Food has reached destination!");
 
         // Check if pigeon occupies position
-        if (true)
-        {        
-            //FeedPigeon(position);
+
+        int restingPointIndex = position;
+
+        GameObject selectedFeedingPoint = pigeonRestingPoints.transform.GetChild(restingPointIndex).gameObject;
+
+        if (selectedFeedingPoint.GetComponent<WirePoint>().isOccupied)
+        {
+            FeedPigeon(restingPointIndex, selectedFeedingPoint);
         }
+
+
     }
 
     //TODO: check edge cases; thrown, but pigeon no longer there?
     //only check if pigeon there at end of thrown anim
+
+    public void FeedPigeon(int num, GameObject obj)
+    {
+        Debug.Log("Feeding pigeon");
+
+        for (int i = 0; i < PigeonManager.instance.pigeonArray.Length; i++)
+        {
+        
+            if (PigeonManager.instance.pigeonArray[i] == null) continue;
+
+            GameObject pointToCheck = PigeonManager.instance.pigeonArray[i].pigeonWirePoints;
+
+            GameObject pigeonObj = PigeonManager.instance.pigeonArray[i].pigeonObject;
+
+            if (obj != null && obj == pointToCheck && pigeonObj != null)
+            {
+                Pigeon targetPigeon = pigeonObj.GetComponent<Pigeon>();
+
+                if (targetPigeon != null && targetPigeon.pigeonState == Pigeon.PigeonStates.Waiting)
+                {
+                    targetPigeon.pigeonState = Pigeon.PigeonStates.Eating;
+                    targetPigeon.isFed = true;
+                    //targetPigeon.pigeonState = PigeonStates.Flying;
+                    break;
+                }
+            }
+        }
+    }
+
+
+
+
+
 }
