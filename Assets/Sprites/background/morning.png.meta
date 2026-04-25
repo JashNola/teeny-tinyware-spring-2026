@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: e6d5582aff5774748be75082ea93260a
+guid: f73203103706c7145a6c4b7edb528975
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -685990394176067462
-    second: telephone-line_0
+      213: -7174398410651123135
+    second: morning_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: telephone-line_0
+      name: morning_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 446
+        y: 0
         width: 1920
-        height: 132
+        height: 1080
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a782ecbfe5fda76f0800000000000000
-      internalID: -685990394176067462
+      spriteID: 142430838aa6f6c90800000000000000
+      internalID: -7174398410651123135
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      telephone-line_0: -685990394176067462
+      morning_0: -7174398410651123135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
