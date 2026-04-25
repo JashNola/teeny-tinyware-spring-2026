@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 30e4c822469c8ff478898867782eda6a
+guid: 1687e3120c6fc9e4ba6358f806c6aef6
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -170,12 +170,12 @@ TextureImporter:
       name: pigeon-eat-spritesheet_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 411
-        width: 199
-        height: 232
+        x: 0
+        y: 360
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: pigeon-eat-spritesheet_1
       rect:
         serializedVersion: 2
-        x: 454
-        y: 386
-        width: 196
-        height: 265
+        x: 360
+        y: 360
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -214,12 +214,12 @@ TextureImporter:
       name: pigeon-eat-spritesheet_2
       rect:
         serializedVersion: 2
-        x: 801
-        y: 585
-        width: 15
-        height: 19
+        x: 720
+        y: 360
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -236,12 +236,12 @@ TextureImporter:
       name: pigeon-eat-spritesheet_3
       rect:
         serializedVersion: 2
-        x: 810
-        y: 412
-        width: 200
-        height: 231
+        x: 0
+        y: 0
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -258,12 +258,12 @@ TextureImporter:
       name: pigeon-eat-spritesheet_4
       rect:
         serializedVersion: 2
-        x: 294
-        y: 417
-        width: 15
-        height: 9
+        x: 360
+        y: 0
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -280,12 +280,12 @@ TextureImporter:
       name: pigeon-eat-spritesheet_5
       rect:
         serializedVersion: 2
-        x: 659
-        y: 418
-        width: 10
-        height: 8
+        x: 720
+        y: 0
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -298,297 +298,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 250
-        y: 381
-        width: 38
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e32306f7423e3d7f0800000000000000
-      internalID: -588877380360064450
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 54
-        width: 200
-        height: 224
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 215975e7dce22ba00800000000000000
-      internalID: 770729946356618514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 270
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8cea7c82855206b70800000000000000
-      internalID: 8890146725000883912
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 831
-        y: 270
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e7d00c6d3c6ae3c0800000000000000
-      internalID: -4329529080702511135
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 853
-        y: 276
-        width: 15
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 28a6797248b2e6b50800000000000000
-      internalID: 6588251151489526402
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 66
-        y: 237
-        width: 11
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a7bde929147e87ee0800000000000000
-      internalID: -1263005426658649222
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 51
-        width: 193
-        height: 206
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1a982a3a8058a49c0800000000000000
-      internalID: -3942192251657877087
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 245
-        width: 12
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: baba7a8473ce72290800000000000000
-      internalID: -7915098097894052949
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 814
-        y: 45
-        width: 184
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 333d75e5281cec100800000000000000
-      internalID: 130254204913046323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_15
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 199
-        width: 9
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fad57103d656457a0800000000000000
-      internalID: -6389370451699212881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_16
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 188
-        width: 11
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dd49d234f5316560800000000000000
-      internalID: 7305179393513049555
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_17
-      rect:
-        serializedVersion: 2
-        x: 1006
-        y: 57
-        width: 23
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 85475e338e372c150800000000000000
-      internalID: 5891398703694312536
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-eat-spritesheet_18
-      rect:
-        serializedVersion: 2
-        x: 970
-        y: 21
-        width: 38
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f043551ad35dff270800000000000000
-      internalID: 8286576300061438991
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d9ade569eae480641b323c0aa7cfbd90
     internalID: 0
     vertices: []
     indices: 
@@ -596,27 +310,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":360.0,"y":360.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       pigeon-eat-spritesheet_0: 6375557461277589520
       pigeon-eat-spritesheet_1: -8125722043232881920
-      pigeon-eat-spritesheet_10: 6588251151489526402
-      pigeon-eat-spritesheet_11: -1263005426658649222
-      pigeon-eat-spritesheet_12: -3942192251657877087
-      pigeon-eat-spritesheet_13: -7915098097894052949
-      pigeon-eat-spritesheet_14: 130254204913046323
-      pigeon-eat-spritesheet_15: -6389370451699212881
-      pigeon-eat-spritesheet_16: 7305179393513049555
-      pigeon-eat-spritesheet_17: 5891398703694312536
-      pigeon-eat-spritesheet_18: 8286576300061438991
       pigeon-eat-spritesheet_2: 2070480779614610085
       pigeon-eat-spritesheet_3: 3205055634447989765
       pigeon-eat-spritesheet_4: 8662034187493520380
       pigeon-eat-spritesheet_5: 4310400286506374093
-      pigeon-eat-spritesheet_6: -588877380360064450
-      pigeon-eat-spritesheet_7: 770729946356618514
-      pigeon-eat-spritesheet_8: 8890146725000883912
-      pigeon-eat-spritesheet_9: -4329529080702511135
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

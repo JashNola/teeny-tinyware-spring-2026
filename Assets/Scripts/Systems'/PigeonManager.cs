@@ -8,13 +8,16 @@ using System.Collections;
 public class PigeonData
 {
     public GameObject pigeonObject;
-    public GameObject pidgeonSpawnPoints;
-    public GameObject pidgeonWirePoints;
+    public GameObject pigeonSpawnPoints;
+    public GameObject pigeonWirePoints;
     public int inputIndex;
 }
 
 public class PigeonManager : MonoBehaviour
 {
+
+    public static PigeonManager instance;
+
     [Header("Settings")]
     public GameObject pigeonPrefab;
     public float SpawnCheckInterval = 2.0f;
@@ -37,6 +40,17 @@ public class PigeonManager : MonoBehaviour
     {
         Pigeon.onPigeonFed -= SetPigeonFed;
         Pigeon.onPigeonStarved -= SetPigeonStarved;
+    }
+    private void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void Start()
@@ -112,8 +126,8 @@ public class PigeonManager : MonoBehaviour
 
             
             pigeonArray[slotIndex].pigeonObject = newPigeon;
-            pigeonArray[slotIndex].pidgeonSpawnPoints = selectedSpawn;
-            pigeonArray[slotIndex].pidgeonWirePoints = selectedWire;
+            pigeonArray[slotIndex].pigeonSpawnPoints = selectedSpawn;
+            pigeonArray[slotIndex].pigeonWirePoints = selectedWire;
             pigeonArray[slotIndex].inputIndex = chosenWireIdx + 1;
 
             // pathfinding
@@ -138,9 +152,9 @@ public class PigeonManager : MonoBehaviour
     {
         if (index < 0 || index >= pigeonArray.Length || pigeonArray[index].pigeonObject == null) return;
 
-        if (pigeonArray[index].pidgeonWirePoints != null)
+        if (pigeonArray[index].pigeonWirePoints != null)
         {
-            pigeonArray[index].pidgeonWirePoints.GetComponent<WirePoint>().isOccupied = false;
+            pigeonArray[index].pigeonWirePoints.GetComponent<WirePoint>().isOccupied = false;
         }
 
         // Flying away </3

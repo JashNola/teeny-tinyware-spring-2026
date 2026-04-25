@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 14d847c47354a3a4ab335ab917ee00f0
+guid: daae60f487e94ff4fabf4ea9c5eaffb1
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -158,12 +158,12 @@ TextureImporter:
       name: pigeon-idle-spritesheet_0
       rect:
         serializedVersion: 2
-        x: 94
-        y: 411
-        width: 199
-        height: 232
+        x: 0
+        y: 360
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -180,12 +180,12 @@ TextureImporter:
       name: pigeon-idle-spritesheet_1
       rect:
         serializedVersion: 2
-        x: 294
-        y: 417
-        width: 15
-        height: 9
+        x: 360
+        y: 360
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -202,12 +202,12 @@ TextureImporter:
       name: pigeon-idle-spritesheet_2
       rect:
         serializedVersion: 2
-        x: 454
-        y: 386
-        width: 196
-        height: 265
+        x: 720
+        y: 360
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -224,12 +224,12 @@ TextureImporter:
       name: pigeon-idle-spritesheet_3
       rect:
         serializedVersion: 2
-        x: 659
-        y: 418
-        width: 10
-        height: 8
+        x: 0
+        y: 0
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -246,12 +246,12 @@ TextureImporter:
       name: pigeon-idle-spritesheet_4
       rect:
         serializedVersion: 2
-        x: 815
-        y: 412
-        width: 195
-        height: 231
+        x: 360
+        y: 0
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -268,12 +268,12 @@ TextureImporter:
       name: pigeon-idle-spritesheet_5
       rect:
         serializedVersion: 2
-        x: 250
-        y: 381
-        width: 38
-        height: 11
+        x: 720
+        y: 0
+        width: 360
+        height: 360
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -286,209 +286,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_6
-      rect:
-        serializedVersion: 2
-        x: 89
-        y: 54
-        width: 200
-        height: 224
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c3fed28326fcb3450800000000000000
-      internalID: 6069672943568154428
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_7
-      rect:
-        serializedVersion: 2
-        x: 493
-        y: 270
-        width: 13
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9796f56c7add71780800000000000000
-      internalID: -8712251241467516551
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_8
-      rect:
-        serializedVersion: 2
-        x: 831
-        y: 270
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9dc69561848636340800000000000000
-      internalID: 4855839482057419993
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_9
-      rect:
-        serializedVersion: 2
-        x: 853
-        y: 276
-        width: 15
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9c20edbbc7130d3e0800000000000000
-      internalID: -2031069020146498871
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_10
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 51
-        width: 193
-        height: 206
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e979e5cb40dcc8f50800000000000000
-      internalID: 6885103350566524830
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 458
-        y: 245
-        width: 12
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c88066c0c10a6ff60800000000000000
-      internalID: 8067811824808364172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_12
-      rect:
-        serializedVersion: 2
-        x: 814
-        y: 45
-        width: 184
-        height: 227
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 347520a4dbe18a860800000000000000
-      internalID: 7541311374371215171
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 1006
-        y: 57
-        width: 23
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ef505e53e7d87e250800000000000000
-      internalID: 5973899003939849726
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: pigeon-idle-spritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 970
-        y: 21
-        width: 38
-        height: 11
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 869dba5d991f57180800000000000000
-      internalID: -9118116227524601496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d7822f139fa01c64c9c80e34315ef8a3
     internalID: 0
     vertices: []
     indices: 
@@ -496,23 +298,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":360.0,"y":360.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       pigeon-idle-spritesheet_0: -8403543667164235432
       pigeon-idle-spritesheet_1: 766722267935539048
-      pigeon-idle-spritesheet_10: 6885103350566524830
-      pigeon-idle-spritesheet_11: 8067811824808364172
-      pigeon-idle-spritesheet_12: 7541311374371215171
-      pigeon-idle-spritesheet_13: 5973899003939849726
-      pigeon-idle-spritesheet_14: -9118116227524601496
       pigeon-idle-spritesheet_2: -7679074458366563537
       pigeon-idle-spritesheet_3: -4243784950431992040
       pigeon-idle-spritesheet_4: 4745372015944089621
       pigeon-idle-spritesheet_5: -2041878882903555582
-      pigeon-idle-spritesheet_6: 6069672943568154428
-      pigeon-idle-spritesheet_7: -8712251241467516551
-      pigeon-idle-spritesheet_8: 4855839482057419993
-      pigeon-idle-spritesheet_9: -2031069020146498871
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
