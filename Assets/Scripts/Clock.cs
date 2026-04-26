@@ -11,7 +11,6 @@ public class Clock : MonoBehaviour
 
     public float maxTime = 90f;
     private float timeRemaining;
-    private float degreesPerSecond = 4f; // 360 degrees over 60 seconds
     private string timeOfDay;
     private Color transparent = new Color(1, 1, 1, 0);
 
