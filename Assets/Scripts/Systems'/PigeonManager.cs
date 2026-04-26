@@ -27,6 +27,7 @@ public class PigeonManager : MonoBehaviour
     public PigeonData[] pigeonArray;
     public List<GameObject> spawnPoints;
     public List<GameObject> wirePoints;
+    public AudioSource flapSFX;
 
     private GameObject pigeonContainer;
 
@@ -90,6 +91,9 @@ public class PigeonManager : MonoBehaviour
 
     void SetPigeonEnter()
     {
+
+        flapSFX.Play();
+
         // Find first empty slot in the data array
         int slotIndex = -1;
         for (int i = 0; i < pigeonArray.Length; i++)
@@ -150,6 +154,9 @@ public class PigeonManager : MonoBehaviour
 
     private void ProcessPigeonExit(int index)
     {
+
+        flapSFX.Play();
+
         if (index < 0 || index >= pigeonArray.Length || pigeonArray[index].pigeonObject == null) return;
 
         if (pigeonArray[index].pigeonWirePoints != null)

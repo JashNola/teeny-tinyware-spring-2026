@@ -7,6 +7,7 @@ public class FeedingManager : MonoBehaviour
 {
     [Header("Object Reference")]
     public GameObject foodProjectile;
+    public AudioSource throwSFX;
 
     [Header("Animation")]
     public SplineContainer[] splines;
@@ -42,6 +43,8 @@ public class FeedingManager : MonoBehaviour
                 
                 if (Input.GetKeyDown((KeyCode)(48 + i)))
                 {
+                    throwSFX.Play();
+
                     lastInput = i; 
                     canThrow = false;
                     if (i == 0) StartCoroutine("ThrowFood", 9);
