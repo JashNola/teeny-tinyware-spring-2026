@@ -18,10 +18,12 @@ public class PigeonManager : MonoBehaviour
 
     public static PigeonManager instance;
 
+    public float spawnCheckInterval = .5f;
+    public float pigeonLeaveDelay = 3.0f;
+
     [Header("Settings")]
     public GameObject pigeonPrefab;
-    public float SpawnCheckInterval = 2.0f;
-    public float PigeonLeaveDelay = 3.0f;
+
 
     [Header("References")]
     public PigeonData[] pigeonArray;
@@ -85,7 +87,7 @@ public class PigeonManager : MonoBehaviour
                 SetPigeonEnter();
             }
 
-            yield return new WaitForSeconds(SpawnCheckInterval);
+            yield return new WaitForSeconds(spawnCheckInterval);
         }
     }
 
@@ -175,6 +177,6 @@ public class PigeonManager : MonoBehaviour
 
     IEnumerator PigeonLeaveCoroutine(GameObject pigeon)
     {
-        yield return new WaitForSeconds(PigeonLeaveDelay);
+        yield return new WaitForSeconds(pigeonLeaveDelay);
     }
 }

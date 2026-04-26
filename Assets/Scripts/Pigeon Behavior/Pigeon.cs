@@ -21,8 +21,6 @@ public class Pigeon : MonoBehaviour
     public static event Action<int> onPigeonStarved;
     
     public int pigeonListIndex;
-    public float lowerStarveRange;
-    public float upperStarveRange;
     public bool isFed = false;
 
     private bool hasTriggeredExit = false;
@@ -37,6 +35,7 @@ public class Pigeon : MonoBehaviour
     {
         if (isFed && !hasTriggeredExit)
         {
+            hasTriggeredExit = true;
             StartCoroutine(PigeonEatingLeaveDelay()); 
         }
     }
@@ -59,14 +58,26 @@ public class Pigeon : MonoBehaviour
 
     IEnumerator LeaveTimer()
     {
-        yield return new WaitForSeconds(UnityEngine.Random.Range(lowerStarveRange, upperStarveRange));
+        int i = UnityEngine.Random.Range(1, 10); // Pigeons will be weighted towards staying longer
+        if (i < 4)
+        {
+            yield return new WaitForSeconds(UnityEngine.Random.Range(1,4));
+        }
+        else
+        {
+            yield return new WaitForSeconds(UnityEngine.Random.Range(4, 7)); 
+        }
+
+
+
+
 
         if (!hasTriggeredExit)
         {
             hasTriggeredExit = true;
             this.gameObject.tag = "PigeonLeaving";
             onPigeonStarved?.Invoke(pigeonListIndex);
-            pigeonState = PigeonStates.Flying; 
+            pigeonState = PigeonStates.Flying;
         }
     }
 
