@@ -36,6 +36,7 @@ public class Pigeon : MonoBehaviour
         if (isFed && !hasTriggeredExit)
         {
             hasTriggeredExit = true;
+            StopAllCoroutines();
             StartCoroutine(PigeonEatingLeaveDelay()); 
         }
     }
@@ -46,8 +47,12 @@ public class Pigeon : MonoBehaviour
     {
         if (other.CompareTag("PigeonRestingPoint"))
         {
-            pigeonState = PigeonStates.Waiting;
-            StartCoroutine(LeaveTimer());
+            if (!isFed && !hasTriggeredExit)
+            {
+                pigeonState = PigeonStates.Waiting;
+                StartCoroutine(LeaveTimer());
+            }
+            
         }
 
         else if (other.CompareTag("PigeonSpawnPoint") && this.gameObject.tag == "PigeonLeaving")

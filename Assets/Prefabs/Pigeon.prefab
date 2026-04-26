@@ -174,8 +174,6 @@ MonoBehaviour:
   occupiedWirePoint: {fileID: 0}
   pigeonState: 0
   pigeonListIndex: 0
-  lowerStarveRange: 1
-  upperStarveRange: 6
   isFed: 0
 --- !u!50 &1742717062266901623
 Rigidbody2D:
