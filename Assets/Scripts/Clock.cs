@@ -9,8 +9,9 @@ public class Clock : MonoBehaviour
     public GameObject noonBG;
     public GameObject eveningBG;
 
-    public float maxTime = 90f;
+    public float maxTime = 60f;
     private float timeRemaining;
+
     private string timeOfDay;
     private Color transparent = new Color(1, 1, 1, 0);
 
