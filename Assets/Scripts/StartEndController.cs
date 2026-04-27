@@ -1,3 +1,5 @@
+using Pathfinding;
+using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -39,11 +41,18 @@ public class StartEndController : MonoBehaviour
 
     void StartGame()
     {
+        if (!PigeonManager.instance.canSpawn)
+        {
+            PigeonManager.instance.canSpawn = true;
+            PigeonManager.instance.StartCoroutine(PigeonManager.instance.SpawnRoutine());
+        }
+
         Debug.Log("Game Started");
 
         gameActive = true;
 
         startScreen.SetActive(false);
+
         endScreen.SetActive(false);
 
         GameplayController.instance.totalPigeonsFed = 0;
@@ -53,6 +62,26 @@ public class StartEndController : MonoBehaviour
 
     public void EndGame()
     {
+        PigeonManager.instance.canSpawn = false;
+
+        for (int i = 0; i < PigeonManager.instance.pigeonArray.Length; i++)
+        {
+            if (PigeonManager.instance.pigeonArray[i].pigeonObject != null)
+            {
+                Destroy(PigeonManager.instance.pigeonArray[i].pigeonObject);
+
+                PigeonManager.instance.pigeonArray[i].pigeonWirePoints = null;
+                PigeonManager.instance.pigeonArray[i].pigeonSpawnPoints = null;
+                PigeonManager.instance.pigeonArray[i].pigeonObject = null;
+            }
+        }
+
+        EndingCheck();
+
+        GameplayController.instance.maxPigeonCount = 1; // Setting pigeon spawn limit to one at a time
+
+        PigeonManager.instance.spawnCheckInterval = 3f; // Setting pigeons back to their default spawning speed
+
         clock.SetActive(false);
 
         endScreen.SetActive(true);
@@ -65,8 +94,6 @@ public class StartEndController : MonoBehaviour
         // fade in win/lose graphic
         // fade in win/lose text
         // fade in "Try Again"
-
-        EndingCheck();
 
         for (int i = 0; i < 2; i++)
         {

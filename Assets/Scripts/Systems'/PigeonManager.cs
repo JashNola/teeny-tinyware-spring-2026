@@ -18,6 +18,8 @@ public class PigeonManager : MonoBehaviour
 
     public static PigeonManager instance;
 
+    public bool canSpawn = true; 
+
     public float spawnCheckInterval = .5f;
     public float pigeonLeaveDelay = 3.0f;
 
@@ -67,12 +69,17 @@ public class PigeonManager : MonoBehaviour
         }
 
         // Start the spawning cycle
-        StartCoroutine(SpawnRoutine());
+
+        if (canSpawn)
+        {
+            StartCoroutine(SpawnRoutine());
+        }
+        
     }
 
-    IEnumerator SpawnRoutine()
+    public IEnumerator SpawnRoutine()
     {
-        while (true)
+        while (true && canSpawn)
         {
             // how many pigeons we got?
             int activeCount = 0;
