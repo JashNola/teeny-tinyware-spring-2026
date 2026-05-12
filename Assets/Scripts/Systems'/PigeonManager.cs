@@ -32,6 +32,7 @@ public class PigeonManager : MonoBehaviour
     public List<GameObject> spawnPoints;
     public List<GameObject> wirePoints;
     public AudioSource flapSFX;
+    public AudioSource eatSFX;
 
     private GameObject pigeonContainer;
 
@@ -153,6 +154,8 @@ public class PigeonManager : MonoBehaviour
 
     private void SetPigeonFed(int obj)
     {
+        eatSFX.Play();
+
         ProcessPigeonExit(obj);
     }
 
