@@ -19,7 +19,7 @@ public class StartEndController : MonoBehaviour
     public TMP_Text endTitle;
     public TMP_Text endSubtitle;
 
-    public float endTextDelay = 0.5f;
+    public float endTextDelay = 1f;
     private bool gameActive = false;
     private bool firstGame = true;
     void Start()
@@ -91,10 +91,7 @@ public class StartEndController : MonoBehaviour
 
     IEnumerator EndingAnimations()
     {
-        // fade in win/lose graphic
-        // fade in win/lose text
-        // fade in "Try Again"
-
+        // fade in text sequentially
         for (int i = 0; i < 2; i++)
         {
             yield return new WaitForSeconds(endTextDelay);
