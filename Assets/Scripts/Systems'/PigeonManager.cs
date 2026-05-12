@@ -101,8 +101,6 @@ public class PigeonManager : MonoBehaviour
     void SetPigeonEnter()
     {
 
-        flapSFX.Play();
-
         // Find first empty slot in the data array
         int slotIndex = -1;
         for (int i = 0; i < pigeonArray.Length; i++)
@@ -148,6 +146,8 @@ public class PigeonManager : MonoBehaviour
             newPigeon.GetComponent<AIDestinationSetter>().target = selectedWire.transform;
 
             selectedWire.GetComponent<WirePoint>().isOccupied = true;
+
+            flapSFX.Play();
         }
     }
 
@@ -163,9 +163,6 @@ public class PigeonManager : MonoBehaviour
 
     private void ProcessPigeonExit(int index)
     {
-
-        flapSFX.Play();
-
         if (index < 0 || index >= pigeonArray.Length || pigeonArray[index].pigeonObject == null) return;
 
         if (pigeonArray[index].pigeonWirePoints != null)
@@ -176,6 +173,8 @@ public class PigeonManager : MonoBehaviour
         // Flying away </3
         int randomExit = UnityEngine.Random.Range(0, spawnPoints.Count);
         pigeonArray[index].pigeonObject.GetComponent<AIDestinationSetter>().target = spawnPoints[randomExit].transform;
+
+        flapSFX.Play();
 
         // Cleanup
         StartCoroutine(PigeonLeaveCoroutine(pigeonArray[index].pigeonObject));
