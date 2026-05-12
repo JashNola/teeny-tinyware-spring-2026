@@ -2172,8 +2172,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: press any number key to start
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef10b2b3878597c4cbf71b7666b65083, type: 2}
-  m_sharedMaterial: {fileID: -7792582664145435866, guid: ef10b2b3878597c4cbf71b7666b65083, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 925fd68556799f54e8e44250a6c37d74, type: 2}
+  m_sharedMaterial: {fileID: -4061871648938743946, guid: 925fd68556799f54e8e44250a6c37d74, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5135,6 +5135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f80ba34f2083a79459b7a8b02b79b6e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PigeonManager
+  canSpawn: 1
   spawnCheckInterval: 0.5
   pigeonLeaveDelay: 3
   pigeonPrefab: {fileID: 3084741771127225406, guid: f9cd36961a4885c4b8f52a75f47b40fb, type: 3}
@@ -5757,7 +5758,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FeedingAnimation
   foodProjectile: {fileID: 857374213}
-  throwSFX: {fileID: 987464180}
   splines:
   - {fileID: 1045729439}
   - {fileID: 1259507373}
@@ -6459,7 +6459,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: try again
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: ef10b2b3878597c4cbf71b7666b65083, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 925fd68556799f54e8e44250a6c37d74, type: 2}
   m_sharedMaterial: {fileID: -7792582664145435866, guid: ef10b2b3878597c4cbf71b7666b65083, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -6526,7 +6526,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: -776.0729, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &2009011882
